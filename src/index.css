@@ -31,3 +31,42 @@ code {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* Game board styles */
+
+.main_board{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 300px;
+}
+
+.board-row::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status{
+  margin-bottom: 1rem;
+}
+
+.restart{
+  margin-top: 1rem;
+}
+
+.square{
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 20px;
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+}
+
+.square:focus{
+
+}

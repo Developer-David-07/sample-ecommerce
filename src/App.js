@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage/Homepage";
+import Gamepage from "./components/Gamepage/Gamepage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Notfound from "./components/Notfound/Notfound";
 import FoodDetails from "./components/FoodDetails/FoodDetails";
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/review/cart" component={CartReview} />
+          <Route exact path="/game" component={Gamepage} />
           <Route exact path="/food/details/:keys" component={FoodDetails} />
           <Route path="*" component={Notfound} />
         </Switch>

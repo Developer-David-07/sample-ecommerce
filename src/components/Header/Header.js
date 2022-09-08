@@ -27,6 +27,10 @@ const Header = () => {
               <FontAwesomeIcon icon={faShoppingCart} className='mr-2' />
               cart
             </Link>
+            <Link className="nav-link" to="/game">
+              <FontAwesomeIcon icon={faShoppingCart} className='mr-2' />
+              play game
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
